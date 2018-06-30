@@ -1,5 +1,5 @@
 import currency_converter
-from flask import Flask, request, jsonify, json, Response
+from flask import Flask, request, jsonify, Response
 
 
 app = Flask(__name__)
