@@ -14,7 +14,7 @@ def web_api():
         return Response("Wrong input currency.", status=400)
     base_curr = request.args.get('input_currency', None, str)
     dest_curr = request.args.get('output_currency', None, str)
-    result = currency_converter.input_code(amount, base_curr, dest_curr)
+    result = currency_converter.main(amount, base_curr, dest_curr)
     if result is None:
         return Response("Wrong argument", status=400)
     return jsonify(result)

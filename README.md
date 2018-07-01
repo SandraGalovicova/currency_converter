@@ -9,4 +9,4 @@ Input parameters:
   
 If output currency is missing, convert to all know currencies. 
 If input/output currency is symbol, which is valid for more currency codes, convert from/to all valid currencies. 
-Support for 34 currency codes and 24 currency symbols.
+Support for 33 currency codes and 24 currency symbols.

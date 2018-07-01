@@ -17,7 +17,7 @@ def pars_args():
 
 def main():
     pars = pars_args()
-    result = currency_converter.input_code(pars.amount, pars.input_currency, pars.output_currency)
+    result = currency_converter.main(pars.amount, pars.input_currency, pars.output_currency)
     if result is None:
         sys.exit(1)
     print(json.dumps(result, indent=4))
